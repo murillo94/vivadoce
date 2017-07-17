@@ -1,6 +1,5 @@
 # About
-This is a part of the project that I made in the first semester of my 
-college course (Engineering Software) to ux theme.
+This is a part of the project (final customer side) that I made in the first semester of my college course (Engineering Software) to ux theme.
 
 # The Project
 The idea of this project is that anyone like chef, confectioner that wanna do the 
