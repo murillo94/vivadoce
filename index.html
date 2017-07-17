@@ -8,7 +8,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
 	<meta name="description" content="">
 
@@ -38,56 +38,80 @@
 
   </head>
 
-  <body style="font-family: 'Lato', sans-serif;">
+  <body>
 
-  	<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #ffffff; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) !important; margin-bottom: 40px; padding: 5px;">
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-background">
+
   		<div class="container">
-  			<div class="navbar-header">
-  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-  					<span class="sr-only">Toggle navigation</span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  				</button>
-  				<a class="navbar-brand" href="#" style="padding: 12px; position: absolute; top: 5px;">
-  					<img src="img/logo.png" alt="Viva Doce" class="img-logo">
-  				</a>
-  			</div>
-  			<div id="navbar" class="navbar-collapse collapse">
-  				<ul class="nav navbar-nav navbar-right">
-  					<li><a href="#" class="nav-a">Torne-se um chefe</a></li>
-  					<li><a href="#" class="nav-a">Ajuda</a></li>
-  					<li><a href="#" class="nav-a">Cadastrar-se</a></li>
-  					<li><a href="#" class="nav-a">Entrar</a></li>
-  				</ul>
-  			</div>
-  		</div>
-  	</nav>
 
+  			<div class="navbar-header">
+
+  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+  					<span class="sr-only">Toggle navigation</span>
+
+  					<span class="icon-bar"></span>
+
+  					<span class="icon-bar"></span>
+
+  					<span class="icon-bar"></span>
+
+  				</button>
+
+  				<a class="navbar-brand navbar-img" href="#">
+
+  					<img src="img/logo.png" alt="Viva Doce" class="img-logo">
+
+  				</a>
+
+  			</div>
+
+  			<div id="navbar" class="navbar-collapse collapse">
+
+  				<ul class="nav navbar-nav navbar-right">
+
+  					<li><a href="#" class="nav-a">Torne-se um chefe</a></li>
+
+  					<li><a href="#" class="nav-a">Ajuda</a></li>
+
+  					<li><a href="#" class="nav-a">Cadastrar-se</a></li>
+
+  					<li><a href="#" class="nav-a">Entrar</a></li>
+
+  				</ul>
+
+  			</div>
+
+  		</div>
+
+  	</nav>
 
   	<div class="container">
 
+  		<div class="jumbotron section-content">
 
-  		<div class="jumbotron" style="background-color: #ffffff; line-height: 1.5;">
+  			<h1 class="hero-shot-viva">Viva Doce.</h1>
 
-  			<h1 style="color: #ff6a6a; font-size: 40px; display: inline; font-weight: bold; margin-right: 10px;">Viva Doce.</h1>
+  			<p class="hero-shot-try">Experimente doces únicos e <br>adoce sua vida.</p>
 
-  			<p style="display: inline; font-size: 30px; color: #484848;">Experimente doces únicos e <br>adoce sua vida.</p>
+  			<div class="row hero-shot-margin">
 
-  			<div class="row" style="margin: 0px; margin-top: 80px;">
+  				<div class="col-sm-12 box-input-infos">
 
-  				<div class="col-sm-12" style="border: 1px solid #ebebed; border-radius: 4px; padding: 0; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;">
+  					<div class="col-sm-3 form-group-infos">
 
-  					<div class="col-sm-3" style="padding: 18px; padding-top: 10px; border-right: 1px solid #ebebed;">
+  						<div class="form-group form-group-infos-margin">
 
-  						<div class="form-group" style="margin-bottom: 0">
+  							<label for="what" class="form-group-infos-label">O quê
 
-  							<label for="what" style="margin-bottom: 0; width: 100%; font-size: 16px;">O quê
+  								<select required class="form-control select input-infos" id="what">
 
-  								<select required class="form-control" id="what" style="margin-top: 15px; border: none; box-shadow: none; padding: 0; font-size: 15px;">
   									<option value="" disabled selected hidden>Escolha o tipo do seu doce</option>
+
   									<option value="Gourmet">Gourmet</option>
+
   									<option value="Gourmet">Tradicional</option>
+
   								</select>
 
   							</label>
@@ -96,27 +120,13 @@
 
   					</div>
 
-  					<div class="col-sm-3" style="padding: 18px; padding-top: 10px; border-right: 1px solid #ebebed;">
+  					<div class="col-sm-3 form-group-infos">
 
-  						<div class="form-group" style="margin-bottom: 0">
+  						<div class="form-group form-group-infos-margin">
 
-  							<label for="where" style="margin-bottom: 0; width: 100%; font-size: 16px;">Onde
+  							<label for="where" class="form-group-infos-label">Onde
 
-  								<input type="text" placeholder="Informe a cidade" class="form-control" id="where" style="margin-top: 15px; border: none; box-shadow: none; padding: 0; font-size: 15px;">
-
-  							</label>
-
-  						</div>
-
-  					</div>
-
-  					<div class="col-sm-3" style="padding: 18px; padding-top: 10px; border-right: 1px solid #ebebed;">
-
-  						<div class="form-group" style="margin-bottom: 0">
-
-  							<label for="when" style="margin-bottom: 0; width: 100%; font-size: 16px;">Quando
-
-  								<input type="text" data-calendar data-pikaday-locale="pt-br" id="picker" class="pikaday form-control" placeholder="Escolha uma data" style="margin-top: 15px; border: none; box-shadow: none; padding: 0; font-size: 15px;">
+  								<input type="text" placeholder="Informe a cidade" class="form-control input-infos" id="where">
 
   							</label>
 
@@ -124,7 +134,21 @@
 
   					</div>
 
-  					<div class="col-sm-3" style="text-align: center; padding: 25px;">
+  					<div class="col-sm-3 form-group-infos">
+
+  						<div class="form-group form-group-infos-margin">
+
+  							<label for="when" class="form-group-infos-label">Quando
+
+  								<input type="text" data-calendar data-pikaday-locale="pt-br" id="picker" class="pikaday form-control input-infos" placeholder="Escolha uma data">
+
+  							</label>
+
+  						</div>
+
+  					</div>
+
+  					<div class="col-sm-3 btn-group-search">
 
   						<button type="button" class="btn btn-search">Buscar</button>
 
@@ -136,89 +160,77 @@
 
   		</div>
 
-  		<div class="jumbotron" style="background-color: #ffffff; line-height: 1.5;">
+  		<div class="jumbotron section-content">
 
-  			<div class="row" style="margin: 0px; margin-top: 0;">
+  			<div class="row subnav-margin-row">
 
-  				<div class="col-sm-12" style="border-bottom: 1px solid #ebebed; padding: 0; box-shadow: 0 2px 12px -5px rgba(0, 0, 0, 0.1) !important;">
+  				<div class="col-sm-12 subnav-background">
 
   					<ul class="nav navbar-nav navbar-left">
-  						<li><a href="#" class="nav-a" style="background-color: #ffffff; border-bottom: 2px solid #ff6a6a;">Para você</a></li>
-  						<li><a href="#" class="nav-a" style="background-color: #ffffff;">Chefes da casa</a></li>
-  						<li><a href="#" class="nav-a" style="background-color: #ffffff;">Receitas do dia</a></li>
+
+  						<li><a href="#" class="nav-a nav-a-active">Para você</a></li>
+
+  						<li><a href="#" class="nav-a">Chefes da casa</a></li>
+
+  						<li><a href="#" class="nav-a">Receitas do dia</a></li>
+
   					</ul>
 
   				</div>
 
-  				<div class="col-sm-12" style="margin-top: 80px; padding: 0">
+  				<div class="col-sm-12 section-content-steps">
 
-  					<div class="col-sm-12" style="padding: 0; margin-bottom: 20px; display: flex; justify-content: space-between;">
+  					<div class="col-sm-12 main-info">
 
-  						<p style="color: #484848; font-size: 24px; font-weight: bold; margin: 0;">Destaques de hoje</p>
+  						<p class="main-info-name">Destaques de hoje</p>
 
-  						<p class="see-more" style="font-size: 17px; margin: 0; padding: 12px;">Veja mais <i class="glyphicon glyphicon-arrow-right" style="color: #ff6a6a; margin-left: 10px; top: 2px; font-size: 15px;"></i></p>
+  						<p class="main-info-see-more">Ver mais <i class="glyphicon glyphicon-chevron-right icon-see-more"></i></p>
 
   					</div>
 
-  					<div class="col-sm-12" style="padding: 0">
+  					<div class="col-sm-12 section-thumbnail">
 
   						<div class="row">
 
-  							<div class="col-sm-3" style="cursor: pointer;">
+  							<div class="col-sm-3 thumbnail-hover">
 
-  								<div class="thumbnail" style="padding: 0; border: none;">
+  								<div class="thumbnail">
 
-  									<img src="img/brigadeiro_meio_amargo.jpg" alt="Brigadeiro meio amargo" style="width: 100%; border-radius: 4px;">
+  									<img src="img/brigadeiro_meio_amargo.jpg" alt="Brigadeiro meio amargo" class="thumbnail-img">
 
-  									<div style="margin-top: 18px;">
+  									<div class="section-info-thumbnail">
 
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Brigadeiro meio amargo</p>
-
-  									</div>
-
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-
-  										<div style="display: inline;">
-
-  											<img src="img/ana_buarque.jpg" class="img-circle" alt="Ana Buarque" style="width: 30px; height: 30px; border-radius: 50%;">
-
-  										</div>
-
-  										<div style="display: inline; white-space: nowrap;">
-
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pela chefe Ana Buarque</p>
-
-  										</div>
+  										<p class="section-name-thumbnail">Brigadeiro meio amargo</p>
 
   									</div>
 
-  								</div>
+  									<div class="chef">
 
-  							</div>
+  										<div class="box-img-chef">
 
-  							<div class="col-sm-3" style="cursor: pointer;">
-
-  								<div class="thumbnail" style="padding: 0; border: none;">
-
-  									<img src="img/beijinho_goumert.jpg" alt="Beijinho goumert" cap" style="width: 100%; border-radius: 4px;">
-
-  									<div style="margin-top: 18px;">
-
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Beijinho goumert</p>
-
-  									</div>
-
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-
-  										<div style="display: inline;">
-
-  											<img src="img/carlos_alves.jpg" class="img-circle" alt="Carlos Alves" style="width: 30px; height: 30px; border-radius: 50%;">
+  											<img src="img/ana_buarque.jpg" class="img-circle" alt="Ana Buarque">
 
   										</div>
 
-  										<div style="display: inline; white-space: nowrap;">
+  										<div class="box-do-name-chef">
 
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pelo chefe Carlos Alves</p>
+  											<p class="name-chef">Feito pela chefe Ana Buarque</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
 
   										</div>
 
@@ -228,29 +240,45 @@
 
   							</div>
 
-  							<div class="col-sm-3" style="cursor: pointer;">
+  							<div class="col-sm-3 thumbnail-hover">
 
-  								<div class="thumbnail" style="padding: 0; border: none;">
+  								<div class="thumbnail">
 
-  									<img src="img/bolo_nozes.jpg" alt="Bolo de nozes" cap" style="width: 100%; border-radius: 4px;">
+  									<img src="img/beijinho_goumert.jpg" alt="Beijinho goumert" cap" class="thumbnail-img">
 
-  									<div style="margin-top: 18px;">
+  									<div class="section-info-thumbnail">
 
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Bolo de nozes</p>
+  										<p class="section-name-thumbnail">Beijinho goumert</p>
 
   									</div>
 
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+  									<div class="chef">
 
-  										<div style="display: inline;">
+  										<div class="box-img-chef">
 
-  											<img src="img/maria_silva.jpg" class="img-circle" alt="Maria Silva" style="width: 30px; height: 30px; border-radius: 50%;">
+  											<img src="img/carlos_alves.jpg" class="img-circle" alt="Carlos Alves">
 
   										</div>
 
-  										<div style="display: inline; white-space: nowrap;">
+  										<div class="box-do-name-chef">
 
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pela chefe Maria Silva</p>
+  											<p class="name-chef">Feito pelo chefe Carlos Alves</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
 
   										</div>
 
@@ -260,29 +288,93 @@
 
   							</div>
 
-  							<div class="col-sm-3" style="cursor: pointer;">
+  							<div class="col-sm-3 thumbnail-hover">
 
-  								<div class="thumbnail" style="padding: 0; border: none;">
+  								<div class="thumbnail">
 
-  									<img src="img/beijinho_tradicional.jpg" alt="Beijinho tradicional goumert" cap" style="width: 100%; border-radius: 4px;">
+  									<img src="img/bolo_nozes.jpg" alt="Bolo de nozes" cap" class="thumbnail-img">
 
-  									<div style="margin-top: 18px;">
+  									<div class="section-info-thumbnail">
 
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Beijinho tradicional goumert</p>
+  										<p class="section-name-thumbnail">Bolo de nozes</p>
 
   									</div>
 
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+  									<div class="chef">
 
-  										<div style="display:inline;">
+  										<div class="box-img-chef">
 
-  											<img src="img/flavia_matos.jpg" class="img-circle" alt="Flávia Matos" style="width: 30px; height: 30px; border-radius: 50%;">
+  											<img src="img/maria_silva.jpg" class="img-circle" alt="Maria Silva">
 
   										</div>
 
-  										<div style="display: inline; white-space: nowrap;">
+  										<div class="box-do-name-chef">
 
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pela chefe Flávia Matos</p>
+  											<p class="name-chef">Feito pela chefe Maria Silva</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
+
+  										</div>
+
+  									</div>
+
+  								</div>
+
+  							</div>
+
+  							<div class="col-sm-3 thumbnail-hover">
+
+  								<div class="thumbnail">
+
+  									<img src="img/beijinho_tradicional.jpg" alt="Beijinho tradicional goumert" cap" class="thumbnail-img">
+
+  									<div class="section-info-thumbnail">
+
+  										<p class="section-name-thumbnail">Beijinho tradicional goumert</p>
+
+  									</div>
+
+  									<div class="chef">
+
+  										<div class="box-img-chef">
+
+  											<img src="img/flavia_matos.jpg" class="img-circle" alt="Flávia Matos">
+
+  										</div>
+
+  										<div class="box-do-name-chef">
+
+  											<p class="name-chef">Feito pela chefe Flávia Matos</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
 
   										</div>
 
@@ -298,43 +390,59 @@
 
   				</div>
 
-  				<div class="col-sm-12" style="margin-top: 80px; padding: 0">
+  				<div class="col-sm-12 section-content-steps">
 
-  					<div class="col-sm-12" style="padding: 0; margin-bottom: 20px; display: flex; justify-content: space-between;">
+  					<div class="col-sm-12 main-info">
 
-  						<p style="color: #484848; font-size: 24px; font-weight: bold; margin: 0;">Quinta feira combina com...</p>
+  						<p class="main-info-name">Quinta feira combina com...</p>
 
-  						<p class="see-more" style="font-size: 17px; margin: 0; padding: 12px;">Veja mais <i class="glyphicon glyphicon-arrow-right" style="color: #ff6a6a; margin-left: 10px; top: 2px; font-size: 15px;"></i></p>
+  						<p class="main-info-see-more">Ver mais <i class="glyphicon glyphicon-chevron-right icon-see-more"></i></p>
 
   					</div>
 
-  					<div class="col-sm-12" style="padding: 0">
+  					<div class="col-sm-12 section-thumbnail">
 
   						<div class="row">
 
-  							<div class="col-sm-12" style="cursor: pointer;">
+  							<div class="col-sm-12 thumbnail-hover">
 
-  								<div class="thumbnail" style="padding: 0; border: none;">
+  								<div class="thumbnail">
 
-  									<img src="img/brigadeiro_no_copinho.jpg" alt="Brigadeiro no copinho com uma bela xícara de café" cap" style="width: 100%; border-radius: 4px;">
+  									<img src="img/brigadeiro_no_copinho.jpg" alt="Brigadeiro no copinho com uma bela xícara de café" cap" class="thumbnail-img">
 
-  									<div style="margin-top: 18px;">
+  									<div class="section-info-thumbnail">
 
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Brigadeiro no copinho com uma bela xícara de café</p>
+  										<p class="section-name-thumbnail">Brigadeiro no copinho com uma bela xícara de café</p>
 
   									</div>
 
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+  									<div class="chef">
 
-  										<div style="display: inline;">
+  										<div class="box-img-chef">
 
-  											<img src="img/maria_silva.jpg" class="img-circle" alt="Maria Silva" style="width: 30px; height: 30px; border-radius: 50%;">
+  											<img src="img/maria_silva.jpg" class="img-circle" alt="Maria Silva">
 
   										</div>
 
-  										<div style="display: inline; white-space:nowrap;">
+  										<div class="box-do-name-chef">
 
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pela chefe Maria Silva</p>
+  											<p class="name-chef">Feito pela chefe Maria Silva</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
 
   										</div>
 
@@ -350,75 +458,59 @@
 
   				</div>
 
-  				<div class="col-sm-12" style="margin-top: 80px; padding: 0">
+  				<div class="col-sm-12 section-content-steps">
 
-  					<div class="col-sm-12" style="padding: 0; margin-bottom: 20px; display: flex; justify-content: space-between;">
+  					<div class="col-sm-12 main-info">
 
-  						<p style="color: #484848; font-size: 24px; font-weight: bold; margin: 0;">Recomendados</p>
+  						<p class="main-info-name">Recomendados</p>
 
-  						<p class="see-more" style="font-size: 17px; margin: 0; padding: 12px;">Veja mais <i class="glyphicon glyphicon-arrow-right" style="color: #ff6a6a; margin-left: 10px; top: 2px; font-size: 15px;"></i></p>
+  						<p class="main-info-see-more">Ver mais <i class="glyphicon glyphicon-chevron-right icon-see-more"></i></p>
 
   					</div>
 
-  					<div class="col-sm-12" style="padding: 0">
+  					<div class="col-sm-12 section-thumbnail">
 
   						<div class="row">
 
-  							<div class="col-sm-3" style="cursor: pointer;">
+  							<div class="col-sm-3 thumbnail-hover">
 
-  								<div class="thumbnail" style="padding: 0; border: none;">
+  								<div class="thumbnail">
 
-  									<img src="img/brigadeiro_com_castanha.jpg" alt="Brigadeiro com castanha e waffle" cap" style="width: 100%; border-radius: 4px;">
+  									<img src="img/brigadeiro_com_castanha.jpg" alt="Brigadeiro com castanha e waffle" cap" class="thumbnail-img">
 
-  									<div style="margin-top: 18px;">
+  									<div class="section-info-thumbnail">
 
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Brigadeiro com castanha e waffle</p>
-
-  									</div>
-
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-
-  										<div style="display: inline;">
-
-  											<img src="img/ana_buarque.jpg" class="img-circle" alt="Ana Buarque" style="width: 30px; height: 30px; border-radius: 50%;">
-
-  										</div>
-
-  										<div style="display: inline; white-space: nowrap;">
-
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pela chefe Ana Buarque</p>
-
-  										</div>
+  										<p class="section-name-thumbnail">Brigadeiro com castanha e waffle</p>
 
   									</div>
 
-  								</div>
+  									<div class="chef">
 
-  							</div>
+  										<div class="box-img-chef">
 
-  							<div class="col-sm-3" style="cursor: pointer;">
-
-  								<div class="thumbnail" style="padding: 0; border: none;">
-
-  									<img src="img/brigadeirinho.jpg" alt="Brigadeirinho" cap" style="width: 100%; border-radius: 4px;">
-
-  									<div style="margin-top: 18px;">
-
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Brigadeirinho</p>
-
-  									</div>
-
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-
-  										<div style="display: inline;">
-
-  											<img src="img/carlos_alves.jpg" class="img-circle" alt="Carlos Alves" style="width: 30px; height: 30px; border-radius: 50%;">
+  											<img src="img/ana_buarque.jpg" class="img-circle" alt="Ana Buarque">
 
   										</div>
 
-  										<div style="display: inline; white-space: nowrap;">
+  										<div class="box-do-name-chef">
 
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pelo chefe Carlos Alves</p>
+  											<p class="name-chef">Feito pela chefe Ana Buarque</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
 
   										</div>
 
@@ -428,29 +520,45 @@
 
   							</div>
 
-  							<div class="col-sm-3" style="cursor: pointer;">
+  							<div class="col-sm-3 thumbnail-hover">
 
-  								<div class="thumbnail" style="padding: 0; border: none;">
+  								<div class="thumbnail">
 
-  									<img src="img/beijinho_com_mumu.jpg" alt="Beijinho com mumu" cap" style="width: 100%; border-radius: 4px;">
+  									<img src="img/brigadeirinho.jpg" alt="Brigadeirinho" cap" class="thumbnail-img">
 
-  									<div style="margin-top: 18px;">
+  									<div class="section-info-thumbnail">
 
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Beijinho com mumu</p>
+  										<p class="section-name-thumbnail">Brigadeirinho</p>
 
   									</div>
 
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+  									<div class="chef">
 
-  										<div style="display: inline;">
+  										<div class="box-img-chef">
 
-  											<img src="img/maria_silva.jpg" class="img-circle" alt="Maria Silva" style="width: 30px; height: 30px; border-radius: 50%;">
+  											<img src="img/carlos_alves.jpg" class="img-circle" alt="Carlos Alves">
 
   										</div>
 
-  										<div style="display: inline; white-space: nowrap;">
+  										<div class="box-do-name-chef">
 
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pela chefe Maria Silva</p>
+  											<p class="name-chef">Feito pelo chefe Carlos Alves</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
 
   										</div>
 
@@ -460,29 +568,93 @@
 
   							</div>
 
-  							<div class="col-sm-3" style="cursor: pointer;">
+  							<div class="col-sm-3 thumbnail-hover">
 
-  								<div class="thumbnail" style="padding: 0; border: none;">
+  								<div class="thumbnail">
 
-  									<img src="img/ovo_goumert.jpg" alt="Ovo de páscoa goumert" cap" style="width: 100%; border-radius: 4px;">
+  									<img src="img/beijinho_com_mumu.jpg" alt="Beijinho com mumu" cap" class="thumbnail-img">
 
-  									<div style="margin-top: 18px;">
+  									<div class="section-info-thumbnail">
 
-  										<p style=" font-size: 18px; color: #484848; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Ovo de páscoa goumert</p>
+  										<p class="section-name-thumbnail">Beijinho com mumu</p>
 
   									</div>
 
-  									<div style="margin-top: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+  									<div class="chef">
 
-  										<div style="display:inline;">
+  										<div class="box-img-chef">
 
-  											<img src="img/flavia_matos.jpg" class="img-circle" alt="Flávia Matos" style="width: 30px; height: 30px; border-radius: 50%;">
+  											<img src="img/maria_silva.jpg" class="img-circle" alt="Maria Silva">
 
   										</div>
 
-  										<div style="display: inline; white-space: nowrap;">
+  										<div class="box-do-name-chef">
 
-  											<p style="display: inline; margin-left: 5px; font-size: 14px; color: #484848;">Feito pela chefe Flávia Matos</p>
+  											<p class="name-chef">Feito pela chefe Maria Silva</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
+
+  										</div>
+
+  									</div>
+
+  								</div>
+
+  							</div>
+
+  							<div class="col-sm-3 thumbnail-hover">
+
+  								<div class="thumbnail">
+
+  									<img src="img/ovo_goumert.jpg" alt="Ovo de páscoa goumert" cap" class="thumbnail-img">
+
+  									<div class="section-info-thumbnail">
+
+  										<p class="section-name-thumbnail">Ovo de páscoa goumert</p>
+
+  									</div>
+
+  									<div class="chef">
+
+  										<div class="box-img-chef">
+
+  											<img src="img/flavia_matos.jpg" class="img-circle" alt="Flávia Matos">
+
+  										</div>
+
+  										<div class="box-do-name-chef">
+
+  											<p class="name-chef">Feito pela chefe Flávia Matos</p>
+
+  										</div>
+
+  									</div>
+
+  									<div class="price">
+
+  										<div class="col-sm-6 box-price">
+
+  											R$ 0,25
+
+  										</div>
+
+  										<div class="col-sm-6 box-like">
+
+  											5<i class="glyphicon glyphicon-heart icon-like"></i>
 
   										</div>
 
@@ -504,51 +676,65 @@
 
   	</div> <!-- /container -->
 
-  	<footer class="footer" style="border-top: 1px solid #f6f6f6; padding-bottom: 10px; background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);">
+  	<footer class="footer">
 
   		<div class="container">
 
-  			<div class="jumbotron" style="background-color: transparent;">
+  			<div class="jumbotron">
 
-  				<div class="col-sm-12" style="padding: 0;">
+  				<div class="col-sm-12 footer-no-padding">
 
-  					<div class="col-sm-4">
+  					<div class="col-sm-4 hidden-xs box-img-padding">
 
   						<a class="navbar-brand" href="#">
-  							<img src="img/logo.png" alt="Viva Doce" style="width: 35%;">
+
+  							<img src="img/logo.png" alt="Viva Doce" class="img-footer">
+
   						</a>
 
   					</div>
 
-  					<div class="col-md-4" style="text-align: right;">
+  					<div class="col-sm-4 col-xs-12 center-footer">
 
-  						<ul>
-  							<li style="display: block; font-size: 17px; font-weight: bold; color: #ffffff;">Sobre Nós</li>
-  							<li class="footer-btn" style="margin-top: 10px;">A empresa</li>
-  							<li class="footer-btn" style="margin-top: 5px;">Blog</li>
-  							<li class="footer-btn" style="margin-top: 5px;">Contato</li>
-  							<li class="footer-btn" style="margin-top: 5px;">Termos de uso</li>
-  							<li class="footer-btn" style="margin-top: 5px;">Privacidade</li>
+  						<ul class="footer-no-padding">
+
+  							<li class="footer-name">Sobre Nós</li>
+
+  							<li class="footer-btn footer-btn-first">A empresa</li>
+
+  							<li class="footer-btn footer-btn-normal">Blog</li>
+
+  							<li class="footer-btn footer-btn-normal">Contato</li>
+
+  							<li class="footer-btn footer-btn-normal">Termos de uso</li>
+
+  							<li class="footer-btn footer-btn-normal">Privacidade</li>
+
   						</ul>
 
   					</div>
 
-  					<div class="col-sm-4" style="text-align: right;">
+  					<div class="col-sm-4 col-xs-12 center-footer">
 
-  						<ul>
-  							<li style="display: block; font-size: 17px; font-weight: bold; color: #ffffff;">Siga-nos</li>
-  							<li class="footer-btn" style="margin-top: 10px;">Facebook</li>
-  							<li class="footer-btn" style="margin-top: 5px;">Instagram</li>
-  							<li class="footer-btn" style="margin-top: 5px;">Twitter</li>
+  						<ul class="footer-no-padding">
+
+  							<li class="footer-name">Siga-nos</li>
+
+  							<li class="footer-btn footer-btn-first">Facebook</li>
+
+  							<li class="footer-btn footer-btn-normal">Instagram</li>
+
+  							<li class="footer-btn footer-btn-normal">Twitter</li>
+
   						</ul>
 
   					</div>
 
   				</div>
 
-  				<div class="col-sm-12" style="padding: 0; border-top: 1px solid rgba(181,181,184,0.5); text-align: center; margin-top: 40px;">
+  				<div class="col-sm-12 col-xs-12 section-myname">
 
-  					<p style="color: #dadadb; font-size: 13px; margin-top: 20px;">
+  					<p class="myname">
 
   						©2017 Todos os direitos reservados.
 
