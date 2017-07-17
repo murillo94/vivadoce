@@ -1,5 +1,5 @@
 # About
-This is a project that I made in the first semester of my 
+This is a part of the project that I made in the first semester of my 
 college course (Engineering Software) to ux theme.
 
 # The Project
