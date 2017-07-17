@@ -207,10 +207,6 @@ select{
 	border-radius: 4px;
 }
 
-.thumbnail-hover:hover{
-	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1) !important;
-}
-
 .thumbnail{
 	padding: 0;
 	border: none;
@@ -234,6 +230,13 @@ select{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	cursor: pointer;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+}
+
+.section-name-thumbnail:hover{
+	color: #6c6c6c;
 }
 
 .chef{
@@ -246,12 +249,135 @@ select{
 
 .box-img-chef{
 	display: inline;
+	cursor: pointer;
 }
 
 .box-img-chef img{
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
+}
+
+.popover{
+	cursor: default;
+	border: 1px solid #d8d8d8 !important;
+}
+
+.popover.top .arrow{
+    left: -16px;
+    margin-top: -12px;
+    border-top-color: #d8d8d8;
+}
+
+.popover.top{
+	margin-top: -15px;
+}
+
+.popover-content {
+	padding-top: 15px;
+}
+
+.chef .img-circle-popover{
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.box-infos{
+	margin-right: 25px;
+	display: inline;
+}
+
+.box-image{
+	display: inline;
+}
+
+.section-content-popover{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	padding: 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.box-infos .name-chef-popover{
+	font-size: 19px;
+	color: #484848;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.box-infos .description-chef-popover{
+	font-size: 12px;
+	color: #7e7e7e;
+	margin: 0;
+	text-align: left;
+}
+
+.section-product-popover{
+	padding: 10px 0 0 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.section-product-popover .main-name-products-popover{
+	color: #7e7e7e;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.section-product-popover ul{
+	padding: 0;
+	padding-left: 14px;
+	color: #7e7e7e;
+}
+
+.section-product-popover li{
+	list-style-type: decimal;
+	font-size: 12px;
+}
+
+.section-product-popover li span{
+	color: #484848;
+}
+
+.name-products-popover-underline:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.section-follow-chef-popover{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0 10px 0;
+}
+
+.section-follow-chef-popover .follow-chef{
+	color: #7e7e7e;
+	font-size: 15px;
+	margin: 0;
+	margin-right: 25px;
+}
+
+.follow-chef-btn{
+	background-color: #ffffff;
+	border: 1px solid #ff6a6a;
+	color: #484848;
+	border-radius: 50px;
+	box-shadow: none;
+	padding: 6px;
+	padding-right: 25px;
+	padding-left: 25px;
+	font-size: 13px;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+}
+
+.follow-chef-btn:hover{
+	background-color: #ff6a6a;
+	color: #ffffff;
 }
 
 .box-do-name-chef{
@@ -264,6 +390,11 @@ select{
 	margin-left: 5px;
 	font-size: 14px;
 	color: #484848;
+}
+
+.name-chef-underline:hover{
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .price{
@@ -300,14 +431,15 @@ select{
 	font-size: 15px;
 }
 
-.thumbnail-hover:hover .chef{
+.thumbnail-hover:hover ~ .chef{
 	display: none;
 }
 
-.thumbnail-hover:hover .price{
+.thumbnail-hover:hover ~ .price{
 	display: block;
 	-webkit-animation: fadeIn 0.8s;
 	animation: fadeIn 0.8s;
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1) !important;
 }
 
 .footer{
